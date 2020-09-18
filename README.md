@@ -1,1 +1,1 @@
-This is a computer graphics project where a 3d model of a car with searchlght is built using OpenGL (Open Graphics Library). OpenGL is an API which is a cross-platform application programming interface for rendering 2D and 3D vector graphics.
+This is a computer graphics project where a 3d model of a car with searchlght is built using OpenGL (Open Graphics Library). OpenGL is an API which is a cross-platform application programming interface for rendering 2D and 3D vector graphics. 
