@@ -1,13 +1,3 @@
-/**
-Group Number: 13
-Name                        Id              Section
-Md Masrafi Rahman           2016-2-60-128   2
-Raiyan Rashid Prodhan       2016-3-60-012   2
-Muhammad Abu Bakar Siddik   2016-3-60-038   2
-Rakibul Alam                2016-3-60-006   2
-Yeasir Hossain Shishir      2016-3-60-011   2
-**/
-
 
 #undef __STRICT_ANSI__
 #include <cmath>
