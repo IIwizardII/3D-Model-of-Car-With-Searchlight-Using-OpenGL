@@ -1,3 +1,14 @@
+/**
+Group Number: 13
+Name                        Id              Section
+Md Masrafi Rahman           2016-2-60-128   2
+Raiyan Rashid Prodhan       2016-3-60-012   2
+Muhammad Abu Bakar Siddik   2016-3-60-038   2
+Rakibul Alam                2016-3-60-006   2
+Yeasir Hossain Shishir      2016-3-60-011   2
+**/
+
+
 #undef __STRICT_ANSI__
 #include <cmath>
 #include <windows.h>
@@ -5,7 +16,7 @@
 
 #include<stdlib.h>
 #include<math.h>
-#include<GL/glut.h>
+#include<glut.h>
 
 #define pi (2*acos(0.0))
 
@@ -781,13 +792,13 @@ void displayScene()
     glRotatef(boxLightAngle, 0, 0, 1);
     glPushMatrix();
 
-    glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
     glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
 
     if(carMove)
         glTranslatef(0, yMove, 0);
-
+    glRotatef(lightRotatingDegree, 0, 0, 1);
     glTranslatef(0, 0, 30+(smallBoxHeight/2) + (largeBoxHeight/2)+poleHeight+(lightboxHeight/2)+allAnimationHeight); // places the small box on top of the large box
     displaylightBox(lightboxLength, lightboxWidth, lightboxHeight); // small box
     glPopMatrix();
@@ -805,12 +816,13 @@ void displayScene()
         zAxisValue -= lower;
         glPushMatrix();
 
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
 
         if(carMove)
             glTranslatef(0, yMove, 0);
+        glRotatef(lightRotatingDegree, 0, 0, 1);
 
         glTranslatef(11, -8+(quadLength/2), zAxisValue);
         glRotatef(rotationDegree, 1, 0, 0);
@@ -819,13 +831,13 @@ void displayScene()
 
         glPushMatrix();
 
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
 
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(-11, -8+(quadLength/2), zAxisValue);
         glRotatef(rotationDegree, 1, 0, 0);
         displayQuad(quadLength, quadWidth-5);
@@ -833,12 +845,12 @@ void displayScene()
 
         glPushMatrix();
 
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(0, -8+(quadLength/2), zAxisValue);
         glRotatef(rotationDegree, 1, 0, 0);
 
@@ -852,12 +864,12 @@ void displayScene()
         zAxisValue -= lower;
         glPushMatrix();
 
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(11, -8+(quadLength/2), zAxisValue);
         glRotatef(rotationDegree, 1, 0, 0);
         displayQuad(quadLength, quadWidth-5);
@@ -865,12 +877,12 @@ void displayScene()
 
         glPushMatrix();
         ///new s
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
         ///new e
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(0, -8+(quadLength/2), zAxisValue);
         glRotatef(rotationDegree, 1, 0, 0);
         displayQuad(quadLength, quadWidth-5);
@@ -878,12 +890,12 @@ void displayScene()
 
         glPushMatrix();
         ///new s
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
         ///new e
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(-11, -8+(quadLength/2), zAxisValue);
         glRotatef(rotationDegree, 1, 0, 0);
         displayQuad(quadLength, quadWidth-5);
@@ -895,11 +907,11 @@ void displayScene()
         zAxisValue -= lower;
         glPushMatrix();
         ///new s
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(-25, -8+(quadLength/2), zAxisValue+1);
         glRotatef(rotationDegree+10, 0, 0, 1);
         glRotatef(rotationDegree, 0, 1, 0);
@@ -908,12 +920,12 @@ void displayScene()
 
         glPushMatrix();
 
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(-25, -8+(quadLength/2), zAxisValue-10);
         glRotatef(rotationDegree+10, 0, 0, 1);
         glRotatef(rotationDegree, 0, 1, 0);
@@ -922,11 +934,11 @@ void displayScene()
 
         glPushMatrix();
 
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(-25, -8+(quadLength/2), zAxisValue-21);
         glRotatef(rotationDegree+10, 0, 0, 1);
         glRotatef(rotationDegree, 0, 1, 0);
@@ -939,12 +951,12 @@ void displayScene()
         zAxisValue = (smallBoxHeight/2) + 60+(largeBoxHeight/2)+(poleHeight/2)+(lightboxHeight/2+50+40);
         zAxisValue -= lower;
         glPushMatrix();
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(25, -8+(quadLength/2), zAxisValue+1);
         glRotatef(rotationDegree-10, 0, 0, 1);
         glRotatef(rotationDegree, 0, 1, 0);
@@ -953,13 +965,13 @@ void displayScene()
 
         glPushMatrix();
         ///new s
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
         ///new e
         ///Task 31,32 S
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(25, -8+(quadLength/2), zAxisValue-10);
         glRotatef(rotationDegree-10, 0, 0, 1);
         glRotatef(rotationDegree, 0, 1, 0);
@@ -967,12 +979,12 @@ void displayScene()
         glPopMatrix();
 
         glPushMatrix();
-        glRotatef(lightRotatingDegree, 0, 0, 1);
+
 
         glScalef(boxScaleFactorX, boxScaleFactorY, boxScaleFactorZ);
         if(carMove)
             glTranslatef(0, yMove, 0);
-
+        glRotatef(lightRotatingDegree, 0, 0, 1);
         glTranslatef(25, -8+(quadLength/2), zAxisValue-21);
         glRotatef(rotationDegree-10, 0, 0, 1);
         glRotatef(rotationDegree, 0, 1, 0);
